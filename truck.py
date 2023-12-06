@@ -1,6 +1,6 @@
 import datetime  # Imports modules
-import package
-from hashtable import ChainingHashTable
+# import package
+# from hashtable import ChainingHashTable
 import csv
 
 # Manually loaded the "Trucks" this order meets all deadlines and special notes

@@ -1,6 +1,6 @@
 # Renae Villarreal StudentID: 010964462
 from datetime import datetime as dt  # import modules
-import datetime
+# import datetime
 from truck import Trucks, packageOne, packageTwo, packageThree, startTimeTruck1, startTimeTruck2, startTimeTruck3
 from addpackages import loadPackages
 
@@ -77,7 +77,6 @@ class PackageStatus:
                 updated_package_info["truck_number"] = truck_number
                 package_statuses.append(updated_package_info)
 
-
         return package_statuses
 
 
@@ -85,10 +84,6 @@ def main():
     hash_table = loadPackages()
 
     status_calculator = PackageStatus(hash_table.table, hash_table)
-
-    # startTimeTruck1 = datetime.datetime(2023, 10, 5, 8, 0)
-    # startTimeTruck2 = datetime.datetime(2023, 10, 5, 9, 10)
-    # startTimeTruck3 = datetime.datetime(2023, 10, 5, 10, 30)
 
     # Test for visualizing which packages are in which buckets
     '''print("Contents of the Hashtable:")  
@@ -110,10 +105,6 @@ def main():
     # Commented out block is a Test for status Calculation
     '''user_time_input = input("Enter the current time (HH:MM Military Time): ")  
     package_statuses = status_calculator.updates_package_info(user_time_input)'''
-
-    # truck1.printDeliveryLog()
-    # truck2.printDeliveryLog()
-    # truck3.printDeliveryLog()
 
     # Commented out block is a test with commented out block above user_time_input
     '''for package in package_statuses:
